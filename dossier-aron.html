@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dossier Aron D'Alessi</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+        animation: fadeIn 2s ease-in-out forwards;
+    }
+    .terminal-text {
+        font-family: 'Courier New', Courier, monospace;
+        color: #00ff99;
+        background: black;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+  </style>
+</head>
+<body class="dark" onload="document.getElementById('audio').play();">
+  <div class="container fade-in">
+    <img src="confidential.png" alt="Confidential" style="max-width: 200px;" />
+    <div class="terminal-text">
+        <h2>ACCESSO CONFERMATO</h2>
+        <p><strong>Nome:</strong> Aron D'Alessi</p>
+        <p><strong>Status:</strong> ✅ Operativo</p>
+    </div>
+    <br>
+    <a href="accesso.html" class="button">Esci</a>
+  </div>
+  <audio id="audio" src="access.mp3" preload="auto"></audio>
+</body>
+</html>
