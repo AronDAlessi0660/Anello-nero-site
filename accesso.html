@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accesso Riservato</title>
+    <title>ANELLO NERO - ACCESSO (portale creativo)</title>
     <link rel="stylesheet" href="style.css">
     <script>
         function checkPassword() {
             const input = document.getElementById("code").value;
-            if (input === "An3llon3ro") {
-                window.location.href = "private-room.html";
+            if (input === "An3ll0N3ro") {
+                window.location.href = "dossier-aron.html";
             } else {
-                alert("Codice errato.");
+                alert("Codice errato. Accesso negato.");
             }
         }
     </script>
 </head>
-<body>
+
+<body class="dark">
     <div class="container">
-        <h2>Accesso Riservato</h2>
-        <input type="password" id="code" placeholder="Inserisci il codice..." />
-        <button onclick="checkPassword()">Entra</button>
+        <h1>ANELLO NERO</h1>
+        <h2>ACCESSO (portale creativo)</h2>
+        <p>Inserire password...</p>
+        <input type="password" id="code" placeholder="Codice..." />
+        <button class="button" onclick="checkPassword()">Accedi</button>
     </div>
 </body>
+
 </html>
