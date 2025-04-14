@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesso Riservato</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function checkPassword() {
+            const input = document.getElementById("code").value;
+            if (input === "An3llon3ro") {
+                window.location.href = "private-room.html";
+            } else {
+                alert("Codice errato.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Accesso Riservato</h2>
+        <input type="password" id="code" placeholder="Inserisci il codice..." />
+        <button onclick="checkPassword()">Entra</button>
+    </div>
+</body>
+</html>
